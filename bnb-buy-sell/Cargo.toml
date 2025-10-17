@@ -1,0 +1,10 @@
+[package]
+name = "bnb-buy-sell"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.100"
+dotenv = "0.15.0"
+ethers = {version = "2.0.14", features = ["abigen", "rustls"] }
+tokio = {version = "1.47.1", features = ["full"] }

@@ -1,0 +1,84 @@
+[2025-10-16 22:10:55] :
+ 	 token=0x249c24b058c31964333155376cf201b9f6c44444, 
+	 name=十二星座崇拜, 
+	 symbol=十二生肖, 
+	 tx_hash=Some(0x832e06b1e4897a3ada959bf15226222880f4c58ff75085124b46c196e1445c0a),
+	 creator=0x9526ad8efda9aa688a4bb7274ede36386447fc40
+
+[2025-10-16 22:13:11] :
+ 	 token=0x58f33b489be62c98df3877efe893f8c44b9e4444, 
+	 name=猛虎Pro, 
+	 symbol=猛虎Pro, 
+	 tx_hash=Some(0xf868721a17be821e7fd9717e131c6230e6014203bedc379d5fed66bd7fa6e2e7),
+	 creator=0xa380ad6f9ca4f3f598d3b71a9d8eee01186f84ac
+
+[2025-10-16 22:13:26] :
+ 	 token=0xfeb76c864db7eb372b634f5a75efa6a540f54444, 
+	 name=正在前往, 
+	 symbol=PC地点, 
+	 tx_hash=Some(0xf26891d9f76802a6433e54bf7e50d6d315413e9b8f28453dd3929c9d0a7aa682),
+	 creator=0xaf70e200110f49474216b31912efede582ba6e69
+
+[2025-10-16 22:15:59] :
+ 	 token=0xf6e663cf445d75c193dffadfa2b561570f364444, 
+	 name=招财蛙, 
+	 symbol=招财蛙, 
+	 tx_hash=Some(0x718c9824fbc5bd81f8a08b70e47e243963947cd6384c4c098205a64641f1b2f2),
+	 creator=0xab94475834e3f018d9cbe25f38e277d84ebfc159
+
+[2025-10-16 22:16:09] :
+ 	 token=0x4d513cff34815a8c3d07c80ab3597f3dfa8a4444, 
+	 name=金的  玉  金玉良言, 
+	 symbol=金的  玉  金玉良言, 
+	 tx_hash=Some(0x5ebe0180e14b5bda6c786303fd1b5bf16e910346cc1865370a03639883c9eb8b),
+	 creator=0x4ba04830e5f615dc0e7d80a7dc4352c241ccbdc2
+
+[2025-10-16 22:35:07] :
+ 	 token=0x26c7357efa940baf9123ad3773b5a731e2e84444, 
+	 name=NOOB, 
+	 symbol=NOOB, 
+	 tx_hash=Some(0xbcdd4eb4130b9dd0e1782a6a4d7a9572d1bba103b0dcb061c439c761a539122e),
+	 creator=0x50dbe318bc4142436cfd03ee3ebdfe6007a7d7b0
+
+[2025-10-16 22:49:18] :
+ 	 token=0x91650f3035626f4f02c5fd1d53d4935086f04444, 
+	 name=白银指数, 
+	 symbol=AG47, 
+	 tx_hash=Some(0x69419c2ed5d73187697b70e0302f2b0e8361586777f97217858718d3c2c3b959),
+	 creator=0xfc50f28666dc05826c6d7e1705bc454ab0b7267b
+
+[2025-10-16 22:49:47] :
+ 	 token=0x81a157b8642a0e20d8c97aec1b5cf356d64b4444, 
+	 name=💛, 
+	 symbol=💛, 
+	 tx_hash=Some(0xe0d9d02727411b4685f1be2f2a6316ab49771ce8f74ec3c9085dcbee363906b7),
+	 creator=0xb01f5c4dbab9ecf987547a46f18df1119917cde2
+
+[2025-10-16 22:49:47] :
+ 	 token=0x5ad3f41af48ed6d53245df2d77632e46a6c24444, 
+	 name=水箭猫, 
+	 symbol=水箭猫, 
+	 tx_hash=Some(0x5a583d1126bde48fa9d97aa67b4ff9db0de3613d66bbb8e69a4be38132bf5051),
+	 creator=0xe3f0aa22667b5f8de2295a8d1d886c49383b680c
+
+[2025-10-16 22:50:22] :
+ 	 token=0xf68978c611aa92a216a216c175698d2de7a24444, 
+	 name=Legal Coin, 
+	 symbol=LEGAL, 
+	 tx_hash=Some(0x5cc776c3ece86fe554d4b69c93d12b0fcba218d1585ce4792502c083dca6a05c),
+	 creator=0x3704f5e8fe91975a85d9b83b7c87a591f1eadd49
+
+[2025-10-16 22:50:39] :
+ 	 token=0xfe1b0b91db1423417a4a2639f8a3673c12554444, 
+	 name=币安黄金CZ2019, 
+	 symbol=币安黄金CZ2019, 
+	 tx_hash=Some(0x50081b5ff2adb22638a76d75a0d20228327a3d8ea01fe7acdb2b3542c1a46a62),
+	 creator=0x55f249c995221c42bbe5ca7da8cd6f4c6daf90a0
+
+[2025-10-16 22:50:41] :
+ 	 token=0x37f5b8372b07895250e6aefeef2df5a655c14444, 
+	 name=NUMBER OF GOLD, 
+	 symbol=79, 
+	 tx_hash=Some(0xa7817c46797973db02845f43573d7e655b97233c637ea84b20edda66b99cac0f),
+	 creator=0x29a34e29333702c746c9ccc2251314e838fbbfbf
+

@@ -1,0 +1,18 @@
+[package]
+name = "sniper-fourmeme"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.100"
+chrono = { version = "0.4.42", features = ["serde", "clock"] }
+dotenv = "0.15.0"
+ethabi = "18.0.0"
+ethers = {version = "2.0.14", features = ["ws", "rustls"] }
+eyre = "0.6.12"
+futures = "0.3.31"
+futures-util = "0.3.31"
+hex = "0.4.3"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+tokio = {version = "1.47.1", features = ["full"] }
