@@ -1,8 +1,8 @@
 bnb-buy-sell/src/.env
 bnb-buy-sell/src/src/main.rs
-fourmeme-sniper/.env
-fourmeme-sniper/src/listener.rs
-fourmeme-sniper/src/trader.rs
+fourmeme-snipers/.env
+fourmeme-snipers/src/listener.rs
+fourmeme-snipers/src/trader.rs
 creation-dev-buy/.env
 creation-dev-buy/src/listener.rs
 creation-dev-buy/src/listener.rs
