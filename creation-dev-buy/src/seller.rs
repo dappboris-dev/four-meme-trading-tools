@@ -84,52 +84,7 @@ impl Seller {
                 let client = client.clone();
                 let token_manager = token_manager.clone();
                 let token_address_copy = token_address;
-                tokio::time::sleep(Duration::from_secs(40)).await;
-
-                tokio::spawn(async move {
-                    // Get balance and decimals
-                    let (balance, decimals) =
-                        match Seller::get_wallet_token_balance(client.clone(), token_address_copy).await {
-                            Ok(v) => v,
-                            Err(e) => {
-                                eprintln!("⚠️ Failed to get balance or decimals: {:?}", e);
-                                return;
-                            }
-                        };
-
-                    if balance.is_zero() {
-                        println!("⚠️ No tokens to sell for {:?}", token_address_copy);
-                        return;
-                    }
-
-                    let human_balance = balance.as_u128() as f64 / 10f64.powi(decimals as i32);
-                    println!("📊 Selling {} tokens ({:?})", human_balance, token_address_copy);
-
-                    // Approve and sell
-                    if let Err(e) = async {
-                        // Approve TokenManager2 to spend tokens
-                        let approve_call = ERC20::new(token_address_copy, client.clone())
-                            .approve(manager_address, U256::MAX);
-                        let approve_tx = approve_call.send().await?;
-                        println!("✅ Approval tx sent: {:?}", approve_tx.tx_hash());
-
-                        tokio::time::sleep(Duration::from_secs(3)).await;
-
-                        // Sell all tokens
-                        let sell_call = token_manager
-                            .sell_token_amap(token_address_copy, balance, U256::zero());
-
-                        // Then send it
-                        let sell_tx = sell_call.send().await?;
-                        println!("✅ sellTokenAMAP tx sent: {:?}", sell_tx.tx_hash());
-
-                        Ok::<(), anyhow::Error>(())
-                    }.await {
-                        eprintln!("[Seller] Error during sell: {:?}", e);
-                    }
-                });
-            }
-        }
+           
 
         Ok(())
     }
