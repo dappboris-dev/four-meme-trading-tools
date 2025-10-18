@@ -82,21 +82,7 @@ async fn main() -> Result<()> {
             let token_amount: f64 = input.trim().parse().context("Invalid number")?;
             let buy_amount = U256::from((token_amount * 1e18_f64) as u128);
 
-            println!("Estimating buy cost...");
-            let (_, _, _, estimated_cost, _, msg_value, _, _) =
-                helper.try_buy(token_address, buy_amount, U256::zero()).call().await?;
-
-            let max_funds = estimated_cost * U256::from(110) / U256::from(100);
-            println!("Estimated cost: {} wei", estimated_cost);
-            println!("msg.value: {} wei", msg_value);
-            println!("maxFunds (with buffer): {} wei", max_funds);
-
-            tokio::time::sleep(Duration::from_secs(2)).await;
-            let call = token_manager
-                .buy_token(token_address, buy_amount, max_funds)
-                .value(msg_value);
-
-            let tx = call.send().await.context("Failed to send buyToken tx")?;
+            ///
             println!("✅ buyToken tx sent: {:?}", tx.tx_hash());
         }
 
@@ -109,15 +95,7 @@ async fn main() -> Result<()> {
             let token_amount: f64 = input.trim().parse().context("Invalid number")?;
             let amount_to_sell = U256::from((token_amount * 1e18_f64) as u128);
 
-            println!("Approving TokenManager2 as spender...");
-            let call = token.approve(manager_address, U256::MAX);
-            let approve_tx = call.send().await.context("Failed to approve TokenManager2")?;
-            println!("✅ Approval tx sent: {:?}", approve_tx.tx_hash());
-
-            tokio::time::sleep(Duration::from_secs(5)).await;
-            let call = token_manager.sell_token(token_address, amount_to_sell);
-            let tx = call.send().await.context("Failed to send sellToken tx")?;
-            println!("✅ sellToken tx sent: {:?}", tx.tx_hash());
+            /////
         }
 
         // ✅ BUY WITH FIXED BNB
@@ -147,17 +125,7 @@ async fn main() -> Result<()> {
                 return Ok(());
             }
 
-            let call = token.approve(manager_address, U256::MAX);
-            let approve_tx = call.send().await.context("Failed to approve TokenManager2")?;
-            println!("✅ Approval tx sent: {:?}", approve_tx.tx_hash());
-
-            tokio::time::sleep(Duration::from_secs(3)).await;
-            let call = token_manager
-                .buy_token_amap(token_address, funds_to_spend, U256::zero())
-                .value(funds_to_spend);
-
-            let tx = call.send().await.context("Failed to send buyTokenAMAP tx")?;
-            println!("✅ buyTokenAMAP tx sent: {:?}", tx.tx_hash());
+            ////
         }
 
         
